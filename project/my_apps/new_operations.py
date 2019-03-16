@@ -4,7 +4,8 @@ def _url(path):
     return 'https://todo.example.com' + path
 
 class Operations:
-    
+    __name__ = 'rest.api.test'
+	
     def get_tasks(self):
         return requests.get(_url('/tasks/'))    #To get reuest for particular asset of task
 
